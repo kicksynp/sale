@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Kicksy Nepal offers premium quality footwear at unbeatable prices. Explore our collection of sneakers, casual shoes, and sports footwear designed for style and comfort."
+    />
+    <title>Kicksy's Daily Shoe Picks</title>
+
+    <meta
+      name="keywords"
+      content="Kicksy Nepal, Buy Shoes Online Nepal, Affordable Shoes Nepal, Premium Footwear, Sneakers Nepal, Sports Shoes Nepal, Stylish Shoes, Casual Shoes"
+    />
+    <meta name="author" content="Kicksy Nepal Team" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Kicksy Nepal - Premium Footwear at Unbeatable Prices"
+    />
+    <meta
+      property="og:description"
+      content="Discover the best deals on sneakers, sports shoes, and casual footwear in Nepal with Kicksy."
+    />
+    <meta
+      property="og:image"
+      content="https://kicksy.com.np/assets/images/kicksysq.jpg"
+    />
+    <meta property="og:url" content="https://kicksy.com.np/sale" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kicksy's Daily Shoe Picks" />
+    <meta
+      name="twitter:description"
+      content="Discover the best deals on sneakers, sports shoes, and casual footwear in Nepal with Kicksy."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kicksy.com.np/assets/images/kicksydailyshoepick.jpg"
+    />
+
+    <!-- Favicon and Stylesheets -->
+    <link
+      rel="icon"
+      href="./assets/images/kic-ksylogob.png"
+      sizes="512x512"
+      type="image/jpg"
+    />
+    <link rel="stylesheet" href="https://kicksy.com.np/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-dTCgA2lbCN94kmC+uU8R3hH0QldMYkU5y9Gp4RV1GEO9KjkXefVvFc9+z9DbONrQo9AbFS/NrXdq/R+CmYl5RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/828ee17a2b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="./css/aos.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": "https://www.kicksy.com.np",
+        "name": "Kicksy Nepal - Premium Footwears at Unbeatable Prices",
+        "description": "Discover the best deals on sneakers, sports shoes, and casual footwear in Nepal with Kicksy.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://www.kicksy.com.np/assets/images/kicksysq.jpg",
+          "width": 800,
+          "height": 600
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- page loader starts -->
+    <!-- <div id="loader" class="loader">
+    <img src="./assets/images/kicksyload.gif" alt="Loading" />
+  </div> -->
+    <!-- page loader ends -->
+
+    <!-- pop-ups -->
+    <div class="overlay" id="offerPopup">
+      <div class="popup">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        <img src="./assets/images/specialoffer.png" alt="Special Offer" />
+        <h2>Kicksy Stock Switch-Up Sale!</h2>
+        <p>Get off on selected sneakers! Limited sneakers offer.</p>
+        <button
+          onclick="window.open('https://www.instagram.com/kicksy.np', '_blank')"
+        >
+          Grab Yours Today!
+        </button>
+      </div>
+    </div>
+    <!-- pop-ups ends -->
+
+    <nav class="navbar" id="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">
+            <span
+              ><img
+                src="./assets/images/kicksylogob.PNG"
+                width="90"
+                alt="Kicksy Nepal Logo"
+                loading="lazy"
+            /></span>
+          </a>
+        </div>
+
+        <div>
+          <div class="theme-btn fas fa-adjust" id="icon"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- fixed list of links -->
+    <div id="fixed-links">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/kicksy.np/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/@kicksy.np" target="_blank"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+          <a href="https://www.facebook.com/kicksy.np/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.pinterest.com/kicksy_np/" target="_blank"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCH7MPOYiJx3OelDoalIQoyA?sub_confirmation=1"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://x.com/kicksy_np" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://wa.me/9779763374989?text=Hi%20I%20want%20to%20know%20more%20about%20your%20products!"
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- sneakers section starts -->
+    <section class="testimonials" id="testimonials">
+      <div class="max-width">
+        <h2
+          data-aos="fade-up"
+          style="
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+          "
+        >
+          Kicksy's Daily Shoe Picks
+        </h2>
+        <div class="carousel owl-carousel" data-aos="zoom-in">
+          <!-- af1  -->
+          <div class="card">
+            <a
+              href="https://www.instagram.com/p/DFy_nYJJxju/?igsh=MWRpanVrdndtNzdrcw=="
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/af1.jpg"
+                  alt="af1 triple white"
+                  loading="lazy"
+                />
+                <div class="text">AF 1 Triple White</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 4300 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 4500
+                </p>
+                <p>Sizes: 38</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Samba -->
+          <div class="card">
+            <a
+              href="https://www.instagram.com/reel/DGZpHuNJ2Fs/?igsh=MXVvd2c5YTNxbGxvZA=="
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/sambawhite.jpg"
+                  alt="Samba"
+                  loading="lazy"
+                />
+                <div class="text">Samba Cloud White</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 4800 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 5200
+                </p>
+                <p>Size: 38</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- blazer -->
+          <div class="card">
+            <a
+              href="https://www.instagram.com/p/DFu_sXISxeY/?igsh=emtua211cm14cDho"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/blazer.jpg"
+                  alt="nike blazer mid '77"
+                  loading="lazy"
+                />
+                <div class="text">Nike Blazer Mid '77</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 5800 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 6200
+                </p>
+                <p>Size: 38</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 
+          <div class="card">
+            <a
+              href="https://www.instagram.com/p/DF4lAFxIwtQ/?igsh=MXQ1ZHlzM3E2YnE2bQ=="
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/sambablack.jpg"
+                  alt="Samba"
+                  loading="lazy"
+                />
+                <div class="text">Samba Black</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 4800 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 5200
+                </p>
+                <p>Size: 40</p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="card">
+            <a
+              href="https://www.instagram.com/p/DFpsBAmydKm/?igsh=YWE4bTcxZTd4ZnFr"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/revmocha.jpg"
+                  alt="Reverse Mocha Low"
+                  loading="lazy"
+                />
+                <div class="text">Reverse Mocha Low</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 5800 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 6200
+                </p>
+                <p>Size: 42</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://www.instagram.com/p/DFp3RdjSZam/?igsh=bzVrb3l4dGRnYjQ3"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/fragment.jpg"
+                  alt="Fragment Low"
+                  loading="lazy"
+                />
+                <div class="text">Fragment Low</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 5800 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 6200
+                </p>
+                <p>Size: 39</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://www.instagram.com/p/DFwR5_KIQfM/?igsh=bDF2MzJ6eGRhbWV4"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/nb530.jpg"
+                  alt="NB 530 White"
+                  loading="lazy"
+                />
+                <div class="text">NB 530 White</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 5800 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 6200
+                </p>
+                <p>Size: 39</p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="card">
+            <a
+              href="https://www.instagram.com/p/DF4cEjEoL8E/?igsh=MjhoazRiOHd6ZzFh"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  src="./assets/images/shoes/superstargreen.jpg"
+                  alt="Superstar Green"
+                  loading="lazy"
+                />
+                <div class="text">Superstar Green</div>
+                <p style="color: green; font-weight: bold">
+                  Rs. 5800 + Free Socks
+                </p>
+                <p style="text-decoration: line-through; color: red">
+                  Rs. 6200
+                </p>
+                <p>Size: 35</p>
+              </div>
+            </a>
+          </div> -->
+
+          <!-- cards ends here  -->
+        </div>
+        <a
+          href="https://kicksy.com.np"
+          class="btn btn-default"
+          style="margin-right: 20px"
+          >Return Home</a
+        >
+        <a
+          href="https://www.instagram.com/kicksy.np"
+          class="btn btn-default"
+          target="_blank"
+          >Place an Order!</a
+        >
+      </div>
+    </section>
+    <!-- sneakers section ends -->
+
+    <!-- scripts foot -->
+    <script src="./js/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- theme switch -->
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("light-theme");
+      };
+    </script>
+  </body>
+</html>
